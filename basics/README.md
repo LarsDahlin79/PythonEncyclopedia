@@ -5,5 +5,5 @@ If start is skipped, the first index is used, if stop is skipped the last char
 is the stop. If step skipped, it gets the default value 1.
 
 **my_str = "Hello, world"
-*prints "Hello"*
-print(my_str[:5])**
+_prints "Hello"_
+*print(my_str[:5])**
