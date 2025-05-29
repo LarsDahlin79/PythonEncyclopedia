@@ -30,6 +30,7 @@ def main():
         print(it)
 
     # Else statements run after the loop has ended
+    # If break is used to exit the loop, else statements is not executed
     for it in range(5):
         print(it)
     else:
@@ -38,6 +39,28 @@ def main():
     # Allocating a list using for
     my_list = [x*x for x in range(5)]
     print(my_list)
+
+    # Modifying iterator in a for loop
+    # This will print the value "5" 5 times
+    for it in range(5):
+        it = 5
+        print(it)
+
+    # while loops executes until condition is false
+    it = 0
+    while it < 5:
+        print(it)
+        it += 1
+
+    # while can also include else, which is executed after the last iteration
+    it = 0
+    while it < 5:
+        print(it)
+        it += 1
+    else:
+        print("End of while loop")
+
+    # break and continue works like with for loops
 
 if __name__ == "__main__":
     main()
